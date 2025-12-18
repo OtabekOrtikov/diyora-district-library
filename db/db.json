@@ -1,0 +1,557 @@
+{
+    "subjects": [
+        {
+            "id": 1,
+            "name": "Computer Science"
+        },
+        {
+            "id": 2,
+            "name": "History"
+        },
+        {
+            "id": 3,
+            "name": "Literature"
+        },
+        {
+            "id": 4,
+            "name": "Science"
+        },
+        {
+            "id": 5,
+            "name": "Business"
+        },
+        {
+            "id": 6,
+            "name": "Art & Design"
+        }
+    ],
+    "books": [
+        {
+            "id": 1,
+            "title": "JavaScript Basics for Beginners",
+            "author": "N. Harper",
+            "subjectId": 1,
+            "description": "A practical introduction to JavaScript fundamentals and DOM.",
+            "coverUrl": "https://picsum.photos/seed/book1/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 2,
+            "title": "Clean Code in Practice",
+            "author": "R. Martinson",
+            "subjectId": 1,
+            "description": "Readable code patterns and refactoring habits for real projects.",
+            "coverUrl": "https://picsum.photos/seed/book2/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-10",
+            "loanEnd": "2025-12-24",
+            "dueDate": "2025-12-24"
+        },
+        {
+            "id": 3,
+            "title": "Networks Explained",
+            "author": "S. Kline",
+            "subjectId": 1,
+            "description": "Foundations of networks, protocols, and web communication.",
+            "coverUrl": "https://picsum.photos/seed/book3/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 4,
+            "title": "Algorithms: A Friendly Guide",
+            "author": "T. Chen",
+            "subjectId": 1,
+            "description": "Core algorithms with simple examples and clear explanations.",
+            "coverUrl": "https://picsum.photos/seed/book4/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-01",
+            "loanEnd": "2025-12-19",
+            "dueDate": "2025-12-19"
+        },
+        {
+            "id": 5,
+            "title": "Databases 101",
+            "author": "A. Singh",
+            "subjectId": 1,
+            "description": "Relational thinking, SQL basics, and data modeling essentials.",
+            "coverUrl": "https://picsum.photos/seed/book5/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 6,
+            "title": "A Short History of Cities",
+            "author": "M. O’Neil",
+            "subjectId": 2,
+            "description": "How cities formed, grew, and shaped society.",
+            "coverUrl": "https://picsum.photos/seed/book6/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 7,
+            "title": "Empires and Trade Routes",
+            "author": "L. Farrow",
+            "subjectId": 2,
+            "description": "Trade routes and power shifts across centuries.",
+            "coverUrl": "https://picsum.photos/seed/book7/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-05",
+            "loanEnd": "2025-12-22",
+            "dueDate": "2025-12-22"
+        },
+        {
+            "id": 8,
+            "title": "Modern World Timeline",
+            "author": "K. Adams",
+            "subjectId": 2,
+            "description": "Key events from 1800 to today, summarized.",
+            "coverUrl": "https://picsum.photos/seed/book8/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 9,
+            "title": "History of Science",
+            "author": "E. Novak",
+            "subjectId": 2,
+            "description": "Discoveries that changed how we see the universe.",
+            "coverUrl": "https://picsum.photos/seed/book9/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 10,
+            "title": "Cultural Heritage Basics",
+            "author": "D. Karim",
+            "subjectId": 2,
+            "description": "Culture, heritage, and preservation fundamentals.",
+            "coverUrl": "https://picsum.photos/seed/book10/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-12",
+            "loanEnd": "2025-12-28",
+            "dueDate": "2025-12-28"
+        },
+        {
+            "id": 11,
+            "title": "Classic Short Stories",
+            "author": "Various",
+            "subjectId": 3,
+            "description": "A curated set of classic stories across eras.",
+            "coverUrl": "https://picsum.photos/seed/book11/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 12,
+            "title": "Poetry for Quiet Evenings",
+            "author": "H. Lane",
+            "subjectId": 3,
+            "description": "Poems selected for calm reading sessions.",
+            "coverUrl": "https://picsum.photos/seed/book12/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 13,
+            "title": "Modern Literature Reader",
+            "author": "I. Brooks",
+            "subjectId": 3,
+            "description": "Modern works and themes with brief commentary.",
+            "coverUrl": "https://picsum.photos/seed/book13/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-08",
+            "loanEnd": "2025-12-21",
+            "dueDate": "2025-12-21"
+        },
+        {
+            "id": 14,
+            "title": "Writing Characters",
+            "author": "S. Rivera",
+            "subjectId": 3,
+            "description": "Tools and techniques for believable characters.",
+            "coverUrl": "https://picsum.photos/seed/book14/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 15,
+            "title": "Myths and Legends",
+            "author": "T. Nolan",
+            "subjectId": 3,
+            "description": "Legends from around the world retold simply.",
+            "coverUrl": "https://picsum.photos/seed/book15/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-03",
+            "loanEnd": "2025-12-20",
+            "dueDate": "2025-12-20"
+        },
+        {
+            "id": 16,
+            "title": "Physics in Daily Life",
+            "author": "P. Grant",
+            "subjectId": 4,
+            "description": "Physics concepts explained through everyday examples.",
+            "coverUrl": "https://picsum.photos/seed/book16/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 17,
+            "title": "Astronomy Starter Kit",
+            "author": "N. Vega",
+            "subjectId": 4,
+            "description": "Stars, planets, and how to observe the night sky.",
+            "coverUrl": "https://picsum.photos/seed/book17/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 18,
+            "title": "Biology Essentials",
+            "author": "C. Patel",
+            "subjectId": 4,
+            "description": "Cells, systems, and life processes in one place.",
+            "coverUrl": "https://picsum.photos/seed/book18/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-14",
+            "loanEnd": "2025-12-29",
+            "dueDate": "2025-12-29"
+        },
+        {
+            "id": 19,
+            "title": "Chemistry Made Simple",
+            "author": "J. Kim",
+            "subjectId": 4,
+            "description": "Atoms, bonds, reactions, explained plainly.",
+            "coverUrl": "https://picsum.photos/seed/book19/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 20,
+            "title": "Earth Science Overview",
+            "author": "W. Stone",
+            "subjectId": 4,
+            "description": "Rocks, climate, oceans, and natural systems.",
+            "coverUrl": "https://picsum.photos/seed/book20/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-02",
+            "loanEnd": "2025-12-18",
+            "dueDate": "2025-12-18"
+        },
+        {
+            "id": 21,
+            "title": "Small Business Basics",
+            "author": "R. Wallace",
+            "subjectId": 5,
+            "description": "From idea to operations: a starter business guide.",
+            "coverUrl": "https://picsum.photos/seed/book21/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 22,
+            "title": "Marketing Fundamentals",
+            "author": "E. Ross",
+            "subjectId": 5,
+            "description": "Positioning, channels, and simple campaign planning.",
+            "coverUrl": "https://picsum.photos/seed/book22/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-06",
+            "loanEnd": "2025-12-23",
+            "dueDate": "2025-12-23"
+        },
+        {
+            "id": 23,
+            "title": "Finance for Non-Finance",
+            "author": "A. Reid",
+            "subjectId": 5,
+            "description": "Budgets, cash flow, and decision-making basics.",
+            "coverUrl": "https://picsum.photos/seed/book23/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 24,
+            "title": "Project Management Quickstart",
+            "author": "S. Bennett",
+            "subjectId": 5,
+            "description": "Scope, schedule, risk, and delivery basics.",
+            "coverUrl": "https://picsum.photos/seed/book24/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 25,
+            "title": "Negotiation Skills",
+            "author": "M. Dorsey",
+            "subjectId": 5,
+            "description": "Practical negotiation techniques for everyday deals.",
+            "coverUrl": "https://picsum.photos/seed/book25/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-09",
+            "loanEnd": "2025-12-26",
+            "dueDate": "2025-12-26"
+        },
+        {
+            "id": 26,
+            "title": "Design Principles",
+            "author": "K. Ito",
+            "subjectId": 6,
+            "description": "Composition, hierarchy, and visual balance explained.",
+            "coverUrl": "https://picsum.photos/seed/book26/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 27,
+            "title": "Color Theory Basics",
+            "author": "J. Meyer",
+            "subjectId": 6,
+            "description": "Color harmony and contrast for practical design.",
+            "coverUrl": "https://picsum.photos/seed/book27/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 28,
+            "title": "Typography Handbook",
+            "author": "S. Park",
+            "subjectId": 6,
+            "description": "Readable typography choices for interfaces and print.",
+            "coverUrl": "https://picsum.photos/seed/book28/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-11",
+            "loanEnd": "2025-12-27",
+            "dueDate": "2025-12-27"
+        },
+        {
+            "id": 29,
+            "title": "Photography Composition",
+            "author": "L. Cruz",
+            "subjectId": 6,
+            "description": "Framing, light, and composition for better shots.",
+            "coverUrl": "https://picsum.photos/seed/book29/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 30,
+            "title": "UX for Beginners",
+            "author": "A. Watanabe",
+            "subjectId": 6,
+            "description": "User-centered thinking and basic UX workflows.",
+            "coverUrl": "https://picsum.photos/seed/book30/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-07",
+            "loanEnd": "2025-12-25",
+            "dueDate": "2025-12-25"
+        },
+        {
+            "id": 31,
+            "title": "Web Accessibility Essentials",
+            "author": "D. Price",
+            "subjectId": 1,
+            "description": "Semantic HTML, ARIA basics, and inclusive UI patterns.",
+            "coverUrl": "https://picsum.photos/seed/book31/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 32,
+            "title": "CSS Layout Mastery",
+            "author": "F. Young",
+            "subjectId": 1,
+            "description": "Flexbox, Grid, and responsive layout strategies.",
+            "coverUrl": "https://picsum.photos/seed/book32/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 33,
+            "title": "Great Speeches in History",
+            "author": "C. Monroe",
+            "subjectId": 2,
+            "description": "Famous speeches and their historical context.",
+            "coverUrl": "https://picsum.photos/seed/book33/320/480",
+            "isLoaned": true,
+            "loanStart": "2025-12-13",
+            "loanEnd": "2025-12-30",
+            "dueDate": "2025-12-30"
+        },
+        {
+            "id": 34,
+            "title": "Science Experiments at Home",
+            "author": "B. Diaz",
+            "subjectId": 4,
+            "description": "Safe and simple experiments to learn by doing.",
+            "coverUrl": "https://picsum.photos/seed/book34/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        },
+        {
+            "id": 35,
+            "title": "Reading Clubs Starter Guide",
+            "author": "P. Howard",
+            "subjectId": 3,
+            "description": "How to run a book club and keep discussions alive.",
+            "coverUrl": "https://picsum.photos/seed/book35/320/480",
+            "isLoaned": false,
+            "loanStart": null,
+            "loanEnd": null,
+            "dueDate": null
+        }
+    ],
+    "gallery": [
+        {
+            "id": 1,
+            "url": "https://picsum.photos/seed/lib1/900/700",
+            "alt": "Library interior"
+        },
+        {
+            "id": 2,
+            "url": "https://picsum.photos/seed/lib2/700/900",
+            "alt": "Book shelves"
+        },
+        {
+            "id": 3,
+            "url": "https://picsum.photos/seed/lib3/1200/800",
+            "alt": "Reading hall"
+        },
+        {
+            "id": 4,
+            "url": "https://picsum.photos/seed/lib4/800/1200",
+            "alt": "Study desk"
+        },
+        {
+            "id": 5,
+            "url": "https://picsum.photos/seed/lib5/1000/600",
+            "alt": "Library entrance"
+        },
+        {
+            "id": 6,
+            "url": "https://picsum.photos/seed/lib6/600/1000",
+            "alt": "Book corner"
+        },
+        {
+            "id": 7,
+            "url": "https://picsum.photos/seed/lib7/1100/700",
+            "alt": "Library event"
+        },
+        {
+            "id": 8,
+            "url": "https://picsum.photos/seed/lib8/700/1100",
+            "alt": "Quiet zone"
+        },
+        {
+            "id": 9,
+            "url": "https://picsum.photos/seed/lib9/1200/900",
+            "alt": "New arrivals display"
+        },
+        {
+            "id": 10,
+            "url": "https://picsum.photos/seed/lib10/900/1200",
+            "alt": "Books close-up"
+        },
+        {
+            "id": 11,
+            "url": "https://picsum.photos/seed/lib11/1000/800",
+            "alt": "Library staff"
+        },
+        {
+            "id": 12,
+            "url": "https://picsum.photos/seed/lib12/800/1000",
+            "alt": "Children section"
+        },
+        {
+            "id": 13,
+            "url": "https://picsum.photos/seed/lib13/1200/700",
+            "alt": "Community board"
+        },
+        {
+            "id": 14,
+            "url": "https://picsum.photos/seed/lib14/700/1200",
+            "alt": "Reading lamp"
+        },
+        {
+            "id": 15,
+            "url": "https://picsum.photos/seed/lib15/1100/800",
+            "alt": "Library exterior"
+        }
+    ],
+    "announcements": [
+        {
+            "id": 1,
+            "title": "Holiday Hours",
+            "text": "The library will have extended weekend hours this month.",
+            "date": "2025-12-01"
+        },
+        {
+            "id": 2,
+            "title": "New Arrivals",
+            "text": "Fresh titles in Computer Science and Literature are now available.",
+            "date": "2025-12-08"
+        },
+        {
+            "id": 3,
+            "title": "Reading Club",
+            "text": "Join our weekly reading club every Thursday at 18:00.",
+            "date": "2025-12-12"
+        }
+    ],
+    "contacts": [
+        {
+            "id": 1,
+            "address": "12 Riverside Ave, Riverview District",
+            "phone": "+998 90 123 45 67",
+            "email": "info@riverviewlibrary.local",
+            "lat": 41.311081,
+            "lng": 69.240562
+        }
+    ]
+}

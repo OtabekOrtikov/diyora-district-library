@@ -1,0 +1,46 @@
+/* stylelint-disable selector-class-pattern */
+@use "sass:color";
+
+.gallery__grid {
+    padding: 20px 0;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 20px;
+
+    /* Fallback for very small screens */
+    @media (width <=360px) {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+}
+
+.gallery__item {
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
+    background-color: #eee;
+    /* Placeholder bg */
+    margin: 0 auto;
+    /* Center if column is wider than 300px */
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.gallery__empty {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 40px;
+}

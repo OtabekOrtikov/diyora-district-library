@@ -1,0 +1,19 @@
+@import 'variables';
+@import 'mixins';
+
+@include mobile {
+    nav {
+        ul {
+            flex-direction: column;
+
+            li {
+                border-right: none;
+                border-bottom: 1px solid $border-color;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}

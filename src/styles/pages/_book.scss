@@ -1,0 +1,117 @@
+@use "sass:color";
+
+.book-details {
+    background: $card-bg;
+    padding: 40px;
+    border-radius: $radius;
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    box-shadow: $shadow;
+    border: 1px solid $border-color;
+
+    @include mobile {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    &__cover {
+        flex: 0 0 300px;
+
+        img {
+            width: 100%;
+            border-radius: $radius;
+            box-shadow: 0 10px 30px rgb(0 0 0 / 15%);
+        }
+    }
+
+    &__info {
+        flex: 1;
+
+        h1 {
+            margin-bottom: 10px;
+            color: $primary-color;
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: $text-color;
+            opacity: 0.8;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .description {
+            margin-bottom: 40px;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .status-box {
+            background: $background-color;
+            padding: 30px;
+            border-radius: $radius;
+            border: 1px solid $border-color;
+
+            h3 {
+                margin-bottom: 20px;
+                font-size: 1.3rem;
+            }
+
+            .loaned-msg {
+                color: $secondary-color;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                &::before {
+                    content: "!";
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                    background: $secondary-color;
+                    color: #fff;
+                    border-radius: 50%;
+                    font-size: 0.9rem;
+                }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 400px;
+
+                .form-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                    label {
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                    }
+
+                    .error {
+                        color: #d32f2f;
+                        font-size: 0.85rem;
+                        margin-top: 4px;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    padding: 14px;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

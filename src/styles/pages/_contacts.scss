@@ -1,0 +1,60 @@
+.contacts-layout {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.contact-info {
+    flex: 1;
+    background: $card-bg;
+    padding: 40px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: 1px solid $border-color;
+
+    .contact-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            color: $primary-color;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: $text-color;
+            padding-left: 0;
+
+            a {
+                color: $accent-color;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.map-container {
+    flex: 1;
+    height: 450px;
+    border-radius: $radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+    border: 1px solid $border-color;
+    z-index: 1;
+}

@@ -1,0 +1,17 @@
+@mixin mobile {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+}

@@ -1,0 +1,72 @@
+@use "sass:color";
+/* stylelint-disable no-descending-specificity */
+
+.announcements {
+    margin-bottom: 40px;
+
+    h2 {
+        margin-bottom: 20px;
+        color: $primary-color;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .announcement-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+
+        .announcement-card {
+            background: $card-bg;
+            padding: 30px;
+            border-radius: $radius;
+            box-shadow: $shadow;
+            border: 1px solid $border-color;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            h3 {
+                margin-bottom: 10px;
+                color: $accent-color;
+                font-size: 1.3rem;
+            }
+
+            .date {
+                font-size: 0.9rem;
+                color: $text-color;
+                opacity: 0.6;
+                margin-bottom: 15px;
+                display: block;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+.library-info {
+    background: $card-bg;
+    padding: 40px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: 1px solid $border-color;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 20px;
+        color: $primary-color;
+        font-size: 2rem;
+    }
+
+    p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+}
