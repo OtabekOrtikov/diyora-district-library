@@ -68,6 +68,8 @@ nav {
 
         li {
             border-right: 1px solid $border-color;
+            position: relative;
+            /* For submenu positioning */
 
             &:last-child {
                 border-right: none;
@@ -84,6 +86,63 @@ nav {
 
                 [data-theme="dark"] &:hover {
                     background-color: rgba(255, 255, 255, 0.05);
+                }
+            }
+
+            /* Submenu Styles */
+            &.nav__item--has-submenu {
+                .nav__link--submenu {
+                    padding-right: 40px;
+                    position: relative;
+
+                    &::after {
+                        content: '▼';
+                        font-size: 0.7em;
+                        position: absolute;
+                        right: 15px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        opacity: 0.7;
+                    }
+                }
+
+                .nav__submenu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background-color: $card-bg;
+                    min-width: 200px;
+                    box-shadow: $shadow;
+                    border-radius: 0 0 $radius $radius;
+                    border: 1px solid $border-color;
+                    border-top: none;
+                    flex-direction: column;
+                    z-index: 1001;
+
+                    li {
+                        border-right: none;
+                        border-bottom: 1px solid $border-color;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        a {
+                            padding: 15px 20px;
+                            font-size: 0.95rem;
+
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.03);
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                &:hover .nav__submenu,
+                &.nav__item--open .nav__submenu {
+                    display: flex;
                 }
             }
         }
@@ -143,27 +202,28 @@ select {
         border-color: transparent;
     }
 }
+
 /* Breadcrumbs */
 .breadcrumbs {
-  margin-bottom: 20px;
-  padding: 10px 0;
-  
-  a {
-    color: $primary-color;
-    font-weight: 500;
-    
-    &:hover {
-      text-decoration: underline;
+    margin-bottom: 20px;
+    padding: 10px 0;
+
+    a {
+        color: $primary-color;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
-  
-  span {
-    margin: 0 8px;
-    color: $border-color;
-  }
-  
-  .current {
-    color: $text-color;
-    opacity: 0.7;
-  }
+
+    span {
+        margin: 0 8px;
+        color: $border-color;
+    }
+
+    .current {
+        color: $text-color;
+        opacity: 0.7;
+    }
 }
